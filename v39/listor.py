@@ -15,11 +15,12 @@ jämn = []
 udda = []
 for i in range(11):
     slumplista.append(randint(1,100))
+
 for item in slumplista:
     if slumplista(item) % 2 == 0:
-        jämn.append(slumplista[item])
+        jämn.append(slumplista(item))
     else:
-        udda.append(slumplista[item])
+        udda.append(slumplista(item))
 
 print(jämn)
 print(udda)
