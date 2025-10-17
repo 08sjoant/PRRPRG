@@ -19,12 +19,3 @@ for i in range(len(string) - 1, -1, -1):
 
 for i in range(len(string) - 1, -1, -1):
     print(string[i], end="")
-
-
-string = "AAAAADDDDDEEFAAAADDA"
-i = 0
-count = 0
-temp = ""
-
-for char in string:
-    if
