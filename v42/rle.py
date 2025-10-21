@@ -4,10 +4,15 @@ def rle(string):
     for i in range(1, len(string)):
         if string[i] == string[i - 1]:
             count += 1
-        else:
+        elif count > 1:
             output += f"{count}{string[i - 1]}"
             count = 1
-    output += f"{count}{string[i - 1]}"
+        else:
+            output += string[i - 1]
+    if string[-1] != string[-2]:
+        output += string[-1]
+    else:
+        output += f"{count}{string[i - 1]}"
     return(output)
 
-print(rle("BBBBBBBSSCCC"))
+print(rle("BBKBBBBBBSSCCCCD"))
