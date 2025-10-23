@@ -1,5 +1,5 @@
-import string #String används i denna kod för att skapa en lista med alla ascii karaktärer
-alphabet = string.ascii_letters #Förutnämda lista
+import string #String används i denna kod för att skapa en sträng med alla ascii karaktärer
+alphabet = string.ascii_letters #Förutnämda sträng
 
 def encode(message, rotation): #Definerar en funkton som krypterar ett medelande (message) med 'rotation' steg.
     output = ''
