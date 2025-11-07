@@ -11,7 +11,7 @@ while len(clock) > 0:
         if i % 2 == 0 and i < 6:
             output = output + ':'
     print(output)
-    rolex.sleep(0)
+    rolex.sleep(1)
     clock[-1] += 1
     for i in range(1, len(base)):
         if clock[0-i] >= base[0-i]:
